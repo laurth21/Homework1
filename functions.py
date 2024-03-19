@@ -9,3 +9,7 @@ def parallelResistor(R1,R2):
 def current(R,U):
     """Calculating the current throw a resistor by using the Ohm's law"""
     return U/R
+
+def PowerWithDcCurrent(R,I):
+    """Calculating the used power by a resistor using the current throw the resistor"""
+    return U/R

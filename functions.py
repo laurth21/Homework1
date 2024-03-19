@@ -10,6 +10,13 @@ def current(R,U):
     """Calculating the current throw a resistor by using the Ohm's law"""
     return U/R
 
-def PowerWithDcCurrent(R,I):
-    """Calculating the used power by a resistor using the current throw the resistor"""
-    return U/R
+def DcPower(R,UI,UorI):
+    """Calculating the power by a resistor using the voltage or current throw the resistor"""
+    if UorI == 0:
+        """0 for using voltage U"""
+        return UI**2/R
+    elif UorI == 1:
+        """1 for using current I"""
+        return R*I**2
+    else:
+        return "Wrong value for the UorI input"

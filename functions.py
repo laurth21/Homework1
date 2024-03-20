@@ -22,15 +22,15 @@ def current(R,U):
 
 def DcPower(R,UI,UorI):
     """Calculating the power by a resistor using the voltage or current throw the resistor"""
-    if UorI == 0:
-        # 0 for using voltage U
+    if UorI == 0: #0 for using voltage U
         if R <= 0:
             return "Can't divide by zero or negative value for R"
         else:
             return UI**2/R
-    elif UorI == 1:
-        #1 for using current I
-        return R*I**2
+    elif UorI == 1: #1 for using current I
+        if R < 0:
+            return "Negative value for R"
+        else: return R*UI**2
     else:
         #when the input for UorI isn't 0 or 1 -> return an error message
         return "Wrong value for the UorI input"

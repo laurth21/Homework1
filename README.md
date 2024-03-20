@@ -3,5 +3,24 @@
 
 Copyright 2024 Thoeni Laurenz 
 
-This is the repository of the first homework for the Open Soruce Energy Modeling course of Laurenz Thoeni
+This is the repository of the first homework for the Open Source Energy Modeling course of Laurenz Thoeni
+The scope of this project was to understand and learn the fundamental principles of using GitHub and Gitkraken. 
+This was done by trying to code a little pyton program and using commit, push and pull. An additional pyton 
+program should test the functions to make sure all implemented functions work properly.   
 
+## Description of the Pyton Program
+In the pyton program **functions.py** there are four functions: 
+
+1. `serialResistor(R1,R2)`: calculates the total resistance of two resistors in series $`R_{total} = R_1 + R_2´$
+
+2. `parallelResistor(R1,R2)`: calculates the total resistance of two resistors in parallel $`R_{total} = \frac{R_1 \cdot R_2}{R_1+R_2}´$
+3. `current(R,U)`: calculates the current throw a resistor R by an applied voltage U $`I = \frac{U}{R}´$
+4. `DcPower(R,UI,UorI)`: this function can determine the  power dissipation of the resistor with the current throw the 
+resistor or voltage. For using voltage the parameter UorI need to be set to 0:
+
+$` P = \frac{U^2}{R} ´$ 
+and for current to 1: 
+
+$`P = I^2 \cdot R´$ 
+
+The second pyton program **test_functions.py** tests the four functions as mentioned in the beginning of this description.

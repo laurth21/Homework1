@@ -1,8 +1,6 @@
 # Homework 1
 [![license](https://img.shields.io/badge/license-Apache%202.0-black)](https://github.com/laurth21/Homework1/blob/main/LICENSE)
 
-Copyright 2024 Thoeni Laurenz 
-
 This is the repository of the first homework for the Open Source Energy Modeling course of Laurenz Thoeni
 The scope of this project was to understand and learn the fundamental principles of using GitHub and Gitkraken. 
 This was done by trying to code a little python program and using commit, push and pull. An additional python 
@@ -19,3 +17,6 @@ In the python program **functions.py** there are four functions:
 resistor or voltage $U$. For using $U$ the parameter **UorI** need to be set to 0 and the formula $P = \frac{U^2}{R}$ is used and by setting it to 1 $I$ is used with $P = I^2 \cdot R$. 
 
 The second python program **test_functions.py** tests the four functions as mentioned in the beginning of this description.
+
+
+_Copyright 2024 Thoeni Laurenz_ 

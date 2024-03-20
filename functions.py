@@ -6,7 +6,7 @@ def parallelResistor(R1,R2):
     """Calculating the overall resistor value of two resistors R1 and R2 in parallel by multiplying their values and dividing them by their sum"""
     if R1 == 0 and R2 == 0:
         return "Can't divide by zero"
-    elif R1 < 0 or R2 < 0
+    elif R1 < 0 or R2 < 0:
         return "Negative value for resistor"
     else:
         return (R1*R2/(R1+R2))

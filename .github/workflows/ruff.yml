@@ -5,7 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: chartboost/ruff-action@v1
+      - uses: chartboost/ruff-action@v2
         with: 
           args: check --fix
-          commit_message: 'check and fixes by ruff'
+      - uses: chartboost/ruff-action@v2
+        with: 
+          args: format 

@@ -2,7 +2,7 @@ from functions import parallelResistor, serialResistor, current, DcPower
 
 
 def test_serialResistor():
-    assert serialResistor(2,4)==6
+    assert serialResistor(2, 4) == 6
     assert serialResistor(0, 1) == 1
     assert serialResistor(1, -5) == "Negative value for resistor"
     assert serialResistor(2.55, 3.45) == 6

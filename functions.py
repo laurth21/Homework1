@@ -1,5 +1,4 @@
 import os
-import os
 def serialResistor(R1, R2):
     """Calculating the overall resistor value of two resistors R1 and R2 in serial by adding their values"""
     if R1 < 0 or R2 < 0:  # making sure R1 or R2 aren't negative
@@ -10,7 +9,7 @@ def serialResistor(R1, R2):
 
 def parallelResistor(R1, R2):
     """Calculating the overall resistor value of two resistors R1 and R2 in parallel by multiplying their values and dividing them by their sum"""
-    if R1==0 and R2 == 0:  # making sure there is no division by zero
+    if R1==0 and R2==0:  # making sure there is no division by zero
         return "Can't divide by zero"
     elif R1 <0 or R2 < 0:  # making sure R1 or R2 aren't negative
         return "Negative value for resistor"

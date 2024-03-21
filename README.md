@@ -7,7 +7,7 @@ This was done by trying to code a little python program and using commit, push a
 program should test the functions to make sure all implemented functions work properly.   
 
 ## Description of the Python Program
-In the python program **functions.py** there are four functions: 
+In the python program [functions.py](/functions.py)**functions.py** there are four functions: 
 
 1. `serialResistor(R1,R2)`: calculates the total resistance of two resistors in series with $R_{total} = R_1 + R_2$
 

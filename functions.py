@@ -1,4 +1,5 @@
 import os
+import os
 def serialResistor(R1, R2):
     """Calculating the overall resistor value of two resistors R1 and R2 in serial by adding their values"""
     if R1 < 0 or R2 < 0:  # making sure R1 or R2 aren't negative

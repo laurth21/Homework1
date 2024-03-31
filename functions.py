@@ -3,7 +3,7 @@ def serialResistor(R1, R2):
     if R1 < 0 or R2 < 0:  # making sure R1 or R2 aren't negative
         return "Negative value for resistor"
     else:
-        return R1 + R2
+        return R1+R2
 
 
 def parallelResistor(R1, R2):

@@ -5,7 +5,6 @@ def serialResistor(R1, R2):
     else:
         return R1 + R2
 
-
 def parallelResistor(R1, R2):
     """Calculating the overall resistor value of two resistors R1 and R2 in parallel by multiplying their values and dividing them by their sum"""
     if R1 == 0 and R2 == 0:  # making sure there is no division by zero
@@ -15,14 +14,12 @@ def parallelResistor(R1, R2):
     else:
         return R1 * R2 / (R1 + R2)
 
-
 def current(R, U):
     """Calculating the current throw a resistor by using the Ohm's law"""
     if R <= 0:  # making sure R isn't negative or zero (Division)
         return "Can't divide by zero or negative value for R"
     else:
         return U / R
-
 
 def DcPower(R, UI, UorI):
     """Calculating the power by a resistor using the voltage or current throw the resistor"""

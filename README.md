@@ -19,6 +19,6 @@ The second python program [test_functions.py](/test_functions.py) tests the four
 
 ## Additional Information 
 A new directory .github/workflows was added with two yml-files. 
-The first one [run_ruff.yml](.github/workflows/run_ruff.yml) ensures that new added files and updated files pushed to this repository meet the coding style. The second one [run_test_on_GitHub.yml](.github/workflows/run_test_on_GitHub.yml) runs the test of the functions on GitHub. 
+The first one [run_ruff.yml](.github/workflows/ruff.yml) ensures that new added files and updated files pushed to this repository meet the coding style. The second one [run_test_on_GitHub.yml](.github/workflows/run_test_on_GitHub.yml) runs the test of the functions on GitHub. 
 
 _Copyright 2024 Thoeni Laurenz_ 

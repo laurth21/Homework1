@@ -21,7 +21,7 @@ def current(R, U):
     if R <= 0:  # making sure R isn't negative or zero (Division)
         return "Can't divide by zero or negative value for R"
     else:
-        return U / R
+        return U/R+1
 
 
 def DcPower(R, UI, UorI):

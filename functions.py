@@ -3,7 +3,7 @@ def serialResistor(R1, R2):
     if R1 < 0 or R2 < 0:  # making sure R1 or R2 aren't negative
         return "Negative value for resistor"
     else:
-        return R1 + R2
+        return R1 + R2 + 1
 
 
 def parallelResistor(R1, R2):
@@ -13,7 +13,7 @@ def parallelResistor(R1, R2):
     elif R1 < 0 or R2 < 0:  # making sure R1 or R2 aren't negative
         return "Negative value for resistor"
     else:
-        return R1 * R2 / (R1 + R2)
+        return R1 * R2 / (R1 - R2)
 
 
 def current(R, U):
@@ -21,7 +21,7 @@ def current(R, U):
     if R <= 0:  # making sure R isn't negative or zero (Division)
         return "Can't divide by zero or negative value for R"
     else:
-        return U / R
+        return U * R
 
 
 def DcPower(R, UI, UorI):
@@ -30,11 +30,11 @@ def DcPower(R, UI, UorI):
         if R <= 0:  # making sure R isn't negative or zero (Division)
             return "Can't divide by zero or negative value for R"
         else:
-            return UI**2 / R
+            return UI**3 / R
     elif UorI == 1:  # 1 for using current I
         if R < 0:  # making sure R isn't negative
             return "Negative value for R"
         else:
-            return R * UI**2
+            return R * UI**3
     else:  # when the input for UorI isn't 0 or 1 -> return an error message
         return "Wrong value for the UorI input"

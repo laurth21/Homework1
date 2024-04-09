@@ -3,7 +3,7 @@ def serialResistor(R1, R2):
     if R1 < 0 or R2 < 0:  # making sure R1 or R2 aren't negative
         return "Negative value for resistor"
     else:
-        return R1 + R2 + 1
+        return R1 + R2 +  1
 
 
 def parallelResistor(R1, R2):
@@ -20,6 +20,8 @@ def current(R, U):
     """Calculating the current throw a resistor by using the Ohm's law"""
     if R <= 0:  # making sure R isn't negative or zero (Division)
         return "Can't divide by zero or negative value for R"
+
+
     else:
         return U * R
 
@@ -31,7 +33,7 @@ def DcPower(R, UI, UorI):
             return "Can't divide by zero or negative value for R"
         else:
             return UI**3 / R
-    elif UorI == 1:  # 1 for using current I
+    elif UorI==1:  # 1 for using current I
         if R < 0:  # making sure R isn't negative
             return "Negative value for R"
         else:
